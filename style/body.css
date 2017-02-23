@@ -1,0 +1,123 @@
+body{
+ margin-left: 2%;
+ margin-right: 2%;
+ font-family: cursive;
+}
+
+header{
+margin-left: 2%;
+margin-right: 2%;
+text-align: center;
+padding:3%;
+margin-bottom: 0.3%;
+background: blue;
+
+}
+
+article{
+   display:flex; flex-direction:column;
+   margin-left: 2%;
+   margin-right: 2%;
+   padding: 0% 1%;
+
+ }
+
+section article.img p img{
+width: 60%;l
+ }
+
+section{
+display:flex; flex-direction:row;
+margin-bottom: 1%;
+}
+
+section article{
+  background: lightblue;
+}
+
+section article h4{
+ background: green;
+  text-align:center;
+}
+
+section article p{
+  text-align: justify;
+}
+
+
+.menubar{
+  padding:0.3%;
+
+}
+
+.menubar ul{
+  display:flex; flex-direction:row; margin: 0.3% 1%;
+}
+
+.menubar ul li{
+  margin:0.2% 1%;
+  background: lightblue; border-radius: 10%
+}
+
+.menubar ul li:hover a{
+  color:red;
+
+}
+
+.menubar ul li ul{
+  display:none; position: absolute;
+}
+
+.menubar ul li:hover ul{
+  display:block; margin: 0.3%;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+text-align: center;
+padding: 1%;
+display:flex; flex-direction: row;
+justify-content: space-between;
+}
+
+footer article{
+  background: blue;justify-content: space-between;
+  display:flex; flex-flow: nowrap;
+  display:flex;flex-direction: column;
+}
+
+footer h3{
+  background: green;
+}
+
+@media (max-width: 600px){
+.menubar ul,section,footer {
+    flex-direction: column;
+  }
+  section article{
+    flex-direction: column;
+    width:98%;
+  }
+  foooter article{
+    flex-direction:column;
+    border-bottom: 4px solid;
+  }
+}
+
+
+.service{
+  display: flex;flex-direction: row; }
+
+.right{
+  display: flex;flex-direction: column; width:50%;
+}
+.left{
+  display: flex;flex-direction: column; width:50%;
+}
